@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "instant-translate-for-orca"
+version = "1.0.0"
+description = "Instant translation user extension for the Orca screen reader"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "GPL-2.0-only"
+authors = [{ name = "Deniz Aygun" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: X11 Applications :: GTK",
+  "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.optional-dependencies]
+dev = [
+  "bandit>=1.8.6",
+  "mypy>=1.17",
+  "pytest>=8.4",
+  "ruff>=0.12",
+]
+
+[tool.setuptools.packages.find]
+include = ["instant_translate*"]
+
+[tool.setuptools.package-data]
+instant_translate = [
+  "locale/*/LC_MESSAGES/*.mo",
+  "po/*.po",
+  "po/*.pot",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["B", "BLE", "E", "F", "I", "RUF", "SIM", "UP"]
+ignore = [
+  "E402", # GI/Orca imports must follow require_version and loader setup.
+]
+
+[tool.ruff.lint.per-file-ignores]
+"instant_translate/google_chunking.py" = [
+  "RUF001", # Existing full-width punctuation ranges are part of Google chunking.
+]
+"tests/*" = ["BLE001"]
+
+[tool.mypy]
+python_version = "3.11"
+check_untyped_defs = true
+ignore_missing_imports = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+skips = [
+  "B110", # Optional Secret Service import intentionally degrades to unavailable.
+]

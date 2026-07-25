@@ -1,0 +1,84 @@
+name: build extension
+
+on:
+  push:
+    tags: ["*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v7
+
+      - name: Install gettext
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y gettext
+
+      - name: Resolve version from tag
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Compile translation catalogs
+        run: |
+          msgfmt --check \
+            --output-file=instant_translate/locale/tr/LC_MESSAGES/instant_translate.mo \
+            instant_translate/po/tr.po
+
+      - name: Package extension
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          zip -r "instant-translate-for-orca-${VERSION}.zip" instant_translate \
+            -x "*/__pycache__/*" "*.pyc"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: packaged_extension
+          path: ./*.zip
+          archive: false
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: translation_template
+          path: ./instant_translate/po/*.pot
+          archive: false
+
+  upload_release:
+    runs-on: ubuntu-latest
+    if: ${{ startsWith(github.ref, 'refs/tags/') }}
+    needs: ["build"]
+    permissions:
+      contents: write
+    steps:
+      - name: download all artifacts
+        uses: actions/download-artifact@v8
+        with:
+          path: .
+          merge-multiple: true
+          skip-decompress: true
+
+      - name: Display structure of downloaded files
+        run: ls -R
+
+      - name: Calculate sha256
+        run: |
+          echo -e "\nSHA256: " >> changelog.md
+          sha256sum *.zip >> changelog.md
+
+      - name: Release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: |
+            *.zip
+            *.pot
+          body_path: changelog.md
+          fail_on_unmatched_files: true
+          generate_release_notes: true
+          prerelease: ${{ contains(github.ref, '-') }}

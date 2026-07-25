@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# AI assistant artifacts
+.claude/
+CLAUDE.local.md
+.copilot/
+.github/copilot-instructions.md.bak
+.gemini/
+.codex/
+.aider*
+AGENTS.md
+

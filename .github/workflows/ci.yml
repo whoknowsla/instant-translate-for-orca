@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    container: fedora:rawhide
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install system dependencies
+        run: >-
+          dnf install -y
+          gcc
+          gtk3
+          libsecret
+          orca
+          python3-devel
+          python3-gobject
+          python3-pip
+      - name: Install project and development tools
+        run: python3 -m pip install --break-system-packages -e '.[dev]'
+      - name: Compile
+        run: python3 -m compileall -q instant_translate tests
+      - name: Test
+        run: python3 -m pytest -q
+      - name: Lint
+        run: ruff check .
+      - name: Type check
+        run: mypy instant_translate
+      - name: Security scan
+        run: bandit -c pyproject.toml -r instant_translate

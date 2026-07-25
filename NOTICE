@@ -1,0 +1,10 @@
+Instant Translate for Orca
+Copyright (C) 2026 the Instant Translate for Orca contributors
+
+This project is based on the NVDA Instant Translate add-on by Aleksey Sadovoy,
+Beqa Gozalishvili, Mesar Hameed, Alberto Buffolino, and other contributors.
+That work is distributed under the GNU General Public License, version 2 only.
+
+Yandex language data, request flow, and smart text splitting include work
+adapted from YandexTranslate for NVDA by alekssamos and contributors. The
+upstream work is distributed under the MIT License.

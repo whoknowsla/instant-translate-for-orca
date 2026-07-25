@@ -1,0 +1,1029 @@
+# Turkish translations for Instant Translate for Orca package.
+# Copyright (C) 2026 the Instant Translate for Orca contributors
+# This file is distributed under the same license as the Instant Translate for Orca package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Instant Translate for Orca 2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-22 00:00+0300\n"
+"PO-Revision-Date: 2026-07-21 23:55+0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: instant_translate/__init__.py:52
+msgid "Instant Translate"
+msgstr "Anında Çeviri"
+
+#: instant_translate/__init__.py:54
+msgid ""
+"Translates selected or clipboard text using Google Translate, Yandex "
+"Translate, or DeepL."
+msgstr ""
+"Seçili metni veya pano metnini Google Translate, Yandex Translate ya da "
+"DeepL kullanarak çevirir."
+
+#: instant_translate/backends/base.py:46
+#, python-brace-format
+msgid "{provider} returned an unexpectedly large response."
+msgstr "{provider} beklenmedik ölçüde büyük bir yanıt döndürdü."
+
+#: instant_translate/backends/base.py:55
+#, python-brace-format
+msgid "{provider} request failed (HTTP {code})."
+msgstr "{provider} isteği başarısız oldu (HTTP {code})."
+
+#: instant_translate/backends/base.py:82
+#, python-brace-format
+msgid ""
+"Could not verify {provider}'s security certificate. Check the system clock "
+"and CA certificates."
+msgstr ""
+"{provider} güvenlik sertifikası doğrulanamadı. Sistem saatini ve CA "
+"sertifikalarını denetleyin."
+
+#: instant_translate/backends/base.py:92
+#, python-brace-format
+msgid "{provider} timed out. Please try again."
+msgstr "{provider} zaman aşımına uğradı. Yeniden deneyin."
+
+#: instant_translate/backends/base.py:97
+#, python-brace-format
+msgid "Could not connect to {provider}."
+msgstr "{provider} hizmetine bağlanılamadı."
+
+#: instant_translate/backends/base.py:103
+#, python-brace-format
+msgid "{provider} returned an invalid response."
+msgstr "{provider} geçersiz bir yanıt döndürdü."
+
+#: instant_translate/backends/base.py:108
+#, python-brace-format
+msgid "{provider} translation failed."
+msgstr "{provider} çevirisi başarısız oldu."
+
+#: instant_translate/backends/deepl.py:22
+msgid "DeepL rejected the request as malformed."
+msgstr "DeepL isteği hatalı biçimlendirildiği için reddetti."
+
+#: instant_translate/backends/deepl.py:23
+msgid "The DeepL API key is invalid."
+msgstr "DeepL API anahtarı geçersiz."
+
+#: instant_translate/backends/deepl.py:24
+msgid "Too many requests to DeepL. Please wait and try again."
+msgstr "DeepL'e çok fazla istek gönderildi. Bekleyip yeniden deneyin."
+
+#: instant_translate/backends/deepl.py:25
+msgid "The DeepL translation quota has been exceeded."
+msgstr "DeepL çeviri kotası aşıldı."
+
+#: instant_translate/backends/deepl.py:75
+msgid "DeepL input is limited to {maximum:,} characters."
+msgstr "DeepL girdisi {maximum:,} karakterle sınırlıdır."
+
+#: instant_translate/backends/deepl.py:98
+msgid "DeepL returned an invalid response."
+msgstr "DeepL geçersiz bir yanıt döndürdü."
+
+#: instant_translate/backends/yandex.py:22
+msgid "Invalid Yandex Translate access key."
+msgstr "Yandex Translate erişim anahtarı geçersiz."
+
+#: instant_translate/backends/yandex.py:23
+msgid "This Yandex Translate access key has been blocked."
+msgstr "Bu Yandex Translate erişim anahtarı engellenmiş."
+
+#: instant_translate/backends/yandex.py:24
+msgid "You have reached Yandex Translate's daily request limit."
+msgstr "Yandex Translate'in günlük istek sınırına ulaştınız."
+
+#: instant_translate/backends/yandex.py:25
+msgid "You have reached Yandex Translate's daily translated-text limit."
+msgstr "Yandex Translate'in günlük çevrilmiş metin sınırına ulaştınız."
+
+#: instant_translate/backends/yandex.py:26
+msgid "Yandex Translate rejected the request method."
+msgstr "Yandex Translate istek yöntemini reddetti."
+
+#: instant_translate/backends/yandex.py:27
+msgid "The text is too large to translate in one request."
+msgstr "Metin tek bir istekte çevrilemeyecek kadar büyük."
+
+#: instant_translate/backends/yandex.py:28
+msgid "Yandex Translate could not translate this text."
+msgstr "Yandex Translate bu metni çeviremedi."
+
+#: instant_translate/backends/yandex.py:29
+msgid "Yandex Translate does not support this language direction."
+msgstr "Yandex Translate bu dil yönünü desteklemiyor."
+
+#: instant_translate/backends/yandex.py:93
+msgid "Yandex Translate input is limited to {maximum:,} characters."
+msgstr "Yandex Translate girdisi {maximum:,} karakterle sınırlıdır."
+
+#: instant_translate/backends/yandex.py:120
+#, python-brace-format
+msgid "Yandex Translate failed (code {code})."
+msgstr "Yandex Translate başarısız oldu (kod {code})."
+
+#: instant_translate/coordinator.py:90
+msgid "Translation failed because of an internal error."
+msgstr "Çeviri bir iç hata nedeniyle başarısız oldu."
+
+#: instant_translate/deepl_langs.py:23
+msgid "Acehnese"
+msgstr "Açece"
+
+#: instant_translate/deepl_langs.py:24 instant_translate/langs.py:19
+#: instant_translate/yandex_langs.py:16
+msgid "Afrikaans"
+msgstr "Afrikanca"
+
+#: instant_translate/deepl_langs.py:25
+msgid "Aragonese"
+msgstr "Aragonca (İspanya)"
+
+#: instant_translate/deepl_langs.py:26 instant_translate/langs.py:22
+#: instant_translate/yandex_langs.py:18
+msgid "Arabic"
+msgstr "Arapça"
+
+#: instant_translate/deepl_langs.py:27
+msgid "Assamese"
+msgstr "Assamese (Hindistan)"
+
+#: instant_translate/deepl_langs.py:28
+msgid "Aymara"
+msgstr "Aymara (Güney Amerika)"
+
+#: instant_translate/deepl_langs.py:29 instant_translate/langs.py:24
+#: instant_translate/yandex_langs.py:19
+msgid "Azerbaijani"
+msgstr "Azerice"
+
+#: instant_translate/deepl_langs.py:30 instant_translate/yandex_langs.py:20
+msgid "Bashkir"
+msgstr "Başkurtça"
+
+#: instant_translate/deepl_langs.py:31 instant_translate/langs.py:26
+#: instant_translate/yandex_langs.py:21
+msgid "Belarusian"
+msgstr "Belarusça"
+
+#: instant_translate/deepl_langs.py:32 instant_translate/langs.py:29
+#: instant_translate/yandex_langs.py:22
+msgid "Bulgarian"
+msgstr "Bulgarca"
+
+#: instant_translate/deepl_langs.py:33
+msgid "Bhojpuri"
+msgstr "Bhojpuri (Hindistan)"
+
+#: instant_translate/deepl_langs.py:34 instant_translate/langs.py:27
+#: instant_translate/yandex_langs.py:23
+msgid "Bengali"
+msgstr "Bengalce"
+
+#: instant_translate/deepl_langs.py:35
+msgid "Breton"
+msgstr "Bretonca"
+
+#: instant_translate/deepl_langs.py:36 instant_translate/langs.py:28
+#: instant_translate/yandex_langs.py:24
+msgid "Bosnian"
+msgstr "Boşnakça"
+
+#: instant_translate/deepl_langs.py:37 instant_translate/langs.py:30
+#: instant_translate/yandex_langs.py:25
+msgid "Catalan"
+msgstr "Katalanca"
+
+#: instant_translate/deepl_langs.py:38 instant_translate/langs.py:31
+#: instant_translate/yandex_langs.py:26
+msgid "Cebuano"
+msgstr "Cebuano (Filipinler)"
+
+#: instant_translate/deepl_langs.py:39
+msgid "Kurdish (Sorani)"
+msgstr "Kürtçe (Sorani)"
+
+#: instant_translate/deepl_langs.py:40 instant_translate/langs.py:37
+#: instant_translate/yandex_langs.py:27
+msgid "Czech"
+msgstr "Çekçe"
+
+#: instant_translate/deepl_langs.py:41 instant_translate/langs.py:123
+#: instant_translate/yandex_langs.py:29
+msgid "Welsh"
+msgstr "Gal Dili"
+
+#: instant_translate/deepl_langs.py:42 instant_translate/langs.py:38
+#: instant_translate/yandex_langs.py:30
+msgid "Danish"
+msgstr "Danca"
+
+#: instant_translate/deepl_langs.py:43 instant_translate/langs.py:49
+#: instant_translate/yandex_langs.py:31
+msgid "German"
+msgstr "Almanca"
+
+#: instant_translate/deepl_langs.py:44 instant_translate/langs.py:50
+#: instant_translate/yandex_langs.py:32
+msgid "Greek"
+msgstr "Yunanca"
+
+#: instant_translate/deepl_langs.py:45 instant_translate/langs.py:40
+#: instant_translate/yandex_langs.py:33
+msgid "English"
+msgstr "İngilizce"
+
+#: instant_translate/deepl_langs.py:46 instant_translate/langs.py:41
+#: instant_translate/yandex_langs.py:34
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: instant_translate/deepl_langs.py:47 instant_translate/langs.py:107
+#: instant_translate/yandex_langs.py:35
+msgid "Spanish"
+msgstr "İspanyolca"
+
+#: instant_translate/deepl_langs.py:48 instant_translate/langs.py:42
+#: instant_translate/yandex_langs.py:36
+msgid "Estonian"
+msgstr "Estonca"
+
+#: instant_translate/deepl_langs.py:49 instant_translate/langs.py:25
+#: instant_translate/yandex_langs.py:37
+msgid "Basque"
+msgstr "Baskça"
+
+#: instant_translate/deepl_langs.py:50 instant_translate/langs.py:91
+#: instant_translate/yandex_langs.py:38
+msgid "Persian"
+msgstr "Farsça"
+
+#: instant_translate/deepl_langs.py:51 instant_translate/langs.py:44
+#: instant_translate/yandex_langs.py:39
+msgid "Finnish"
+msgstr "Fince"
+
+#: instant_translate/deepl_langs.py:52 instant_translate/langs.py:45
+#: instant_translate/yandex_langs.py:40
+msgid "French"
+msgstr "Fransızca"
+
+#: instant_translate/deepl_langs.py:53 instant_translate/langs.py:62
+#: instant_translate/yandex_langs.py:41
+msgid "Irish"
+msgstr "İrlandaca"
+
+#: instant_translate/deepl_langs.py:54 instant_translate/langs.py:47
+#: instant_translate/yandex_langs.py:43
+msgid "Galician"
+msgstr "Galiçyaca"
+
+#: instant_translate/deepl_langs.py:55
+msgid "Guarani"
+msgstr "Guarani"
+
+#: instant_translate/deepl_langs.py:56
+msgid "Konkani"
+msgstr "Konkani"
+
+#: instant_translate/deepl_langs.py:57 instant_translate/langs.py:51
+#: instant_translate/yandex_langs.py:44
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: instant_translate/deepl_langs.py:58 instant_translate/langs.py:53
+msgid "Hausa"
+msgstr "Hausa"
+
+#: instant_translate/deepl_langs.py:59 instant_translate/langs.py:55
+#: instant_translate/yandex_langs.py:45
+msgid "Hebrew"
+msgstr "İbranice"
+
+#: instant_translate/deepl_langs.py:60 instant_translate/langs.py:56
+#: instant_translate/yandex_langs.py:46
+msgid "Hindi"
+msgstr "Hintçe"
+
+#: instant_translate/deepl_langs.py:61 instant_translate/langs.py:36
+#: instant_translate/yandex_langs.py:47
+msgid "Croatian"
+msgstr "Hırvatça"
+
+#: instant_translate/deepl_langs.py:62 instant_translate/langs.py:52
+msgid "Haitian Creole"
+msgstr "Haiti Kreyolu"
+
+#: instant_translate/deepl_langs.py:63 instant_translate/langs.py:58
+#: instant_translate/yandex_langs.py:49
+msgid "Hungarian"
+msgstr "Macarca"
+
+#: instant_translate/deepl_langs.py:64 instant_translate/langs.py:23
+#: instant_translate/yandex_langs.py:50
+msgid "Armenian"
+msgstr "Ermenice"
+
+#: instant_translate/deepl_langs.py:65 instant_translate/langs.py:61
+#: instant_translate/yandex_langs.py:51
+msgid "Indonesian"
+msgstr "Endonezyaca"
+
+#: instant_translate/deepl_langs.py:66 instant_translate/langs.py:60
+msgid "Igbo"
+msgstr "Igbo"
+
+#: instant_translate/deepl_langs.py:67 instant_translate/langs.py:59
+#: instant_translate/yandex_langs.py:52
+msgid "Icelandic"
+msgstr "İzlandaca"
+
+#: instant_translate/deepl_langs.py:68 instant_translate/langs.py:63
+#: instant_translate/yandex_langs.py:53
+msgid "Italian"
+msgstr "İtalyanca"
+
+#: instant_translate/deepl_langs.py:69 instant_translate/langs.py:64
+#: instant_translate/yandex_langs.py:54
+msgid "Japanese"
+msgstr "Japonca"
+
+#: instant_translate/deepl_langs.py:70 instant_translate/langs.py:65
+#: instant_translate/yandex_langs.py:55
+msgid "Javanese"
+msgstr "Cava dili"
+
+#: instant_translate/deepl_langs.py:71 instant_translate/langs.py:48
+#: instant_translate/yandex_langs.py:56
+msgid "Georgian"
+msgstr "Gürcüce"
+
+#: instant_translate/deepl_langs.py:72 instant_translate/langs.py:67
+#: instant_translate/yandex_langs.py:57
+msgid "Kazakh"
+msgstr "Kazakça"
+
+#: instant_translate/deepl_langs.py:73
+msgid "Kurdish (Kurmanji)"
+msgstr "Kürtçe (Kurmanci)"
+
+#: instant_translate/deepl_langs.py:74 instant_translate/langs.py:70
+#: instant_translate/yandex_langs.py:60
+msgid "Korean"
+msgstr "Korece"
+
+#: instant_translate/deepl_langs.py:75 instant_translate/langs.py:72
+#: instant_translate/yandex_langs.py:61
+msgid "Kyrgyz"
+msgstr "Kırgızca"
+
+#: instant_translate/deepl_langs.py:76 instant_translate/langs.py:74
+#: instant_translate/yandex_langs.py:62
+msgid "Latin"
+msgstr "Latince"
+
+#: instant_translate/deepl_langs.py:77 instant_translate/langs.py:77
+#: instant_translate/yandex_langs.py:63
+msgid "Luxembourgish"
+msgstr "Luxembourgish"
+
+#: instant_translate/deepl_langs.py:78
+msgid "Lombard"
+msgstr "Lombard"
+
+#: instant_translate/deepl_langs.py:79
+msgid "Lingala"
+msgstr "Lingala"
+
+#: instant_translate/deepl_langs.py:80 instant_translate/langs.py:76
+#: instant_translate/yandex_langs.py:65
+msgid "Lithuanian"
+msgstr "Litvanyaca"
+
+#: instant_translate/deepl_langs.py:81 instant_translate/langs.py:75
+#: instant_translate/yandex_langs.py:66
+msgid "Latvian"
+msgstr "Letonca"
+
+#: instant_translate/deepl_langs.py:82
+msgid "Maithili"
+msgstr "Maithili"
+
+#: instant_translate/deepl_langs.py:83 instant_translate/langs.py:79
+#: instant_translate/yandex_langs.py:67
+msgid "Malagasy"
+msgstr "Malgaşça"
+
+#: instant_translate/deepl_langs.py:84 instant_translate/langs.py:83
+#: instant_translate/yandex_langs.py:69
+msgid "Maori"
+msgstr "Maori"
+
+#: instant_translate/deepl_langs.py:85 instant_translate/langs.py:78
+#: instant_translate/yandex_langs.py:70
+msgid "Macedonian"
+msgstr "Makedonca"
+
+#: instant_translate/deepl_langs.py:86 instant_translate/langs.py:81
+#: instant_translate/yandex_langs.py:71
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: instant_translate/deepl_langs.py:87 instant_translate/langs.py:85
+#: instant_translate/yandex_langs.py:72
+msgid "Mongolian"
+msgstr "Moğolca"
+
+#: instant_translate/deepl_langs.py:88 instant_translate/langs.py:84
+#: instant_translate/yandex_langs.py:73
+msgid "Marathi"
+msgstr "Marathi"
+
+#: instant_translate/deepl_langs.py:89 instant_translate/langs.py:80
+#: instant_translate/yandex_langs.py:75
+msgid "Malay"
+msgstr "Malayca"
+
+#: instant_translate/deepl_langs.py:90 instant_translate/langs.py:82
+#: instant_translate/yandex_langs.py:76
+msgid "Maltese"
+msgstr "Maltaca"
+
+#: instant_translate/deepl_langs.py:91 instant_translate/yandex_langs.py:77
+msgid "Burmese"
+msgstr "Birmanca"
+
+#: instant_translate/deepl_langs.py:92
+msgid "Norwegian Bokmål"
+msgstr "Norwegian Bokmål"
+
+#: instant_translate/deepl_langs.py:93 instant_translate/langs.py:87
+#: instant_translate/yandex_langs.py:78
+msgid "Nepali"
+msgstr "Nepalce"
+
+#: instant_translate/deepl_langs.py:94 instant_translate/langs.py:39
+#: instant_translate/yandex_langs.py:79
+msgid "Dutch"
+msgstr "Felemenkçe"
+
+#: instant_translate/deepl_langs.py:95
+msgid "Occitan"
+msgstr "Oksitanca"
+
+#: instant_translate/deepl_langs.py:96
+msgid "Oromo"
+msgstr "Oromo"
+
+#: instant_translate/deepl_langs.py:97 instant_translate/langs.py:94
+#: instant_translate/yandex_langs.py:81
+msgid "Punjabi"
+msgstr "Pencapça"
+
+#: instant_translate/deepl_langs.py:98
+msgid "Pangasinan"
+msgstr "Pangasinan"
+
+#: instant_translate/deepl_langs.py:99
+msgid "Kapampangan"
+msgstr "Kapampanganca"
+
+#: instant_translate/deepl_langs.py:100 instant_translate/langs.py:92
+#: instant_translate/yandex_langs.py:83
+msgid "Polish"
+msgstr "Lehçe"
+
+#: instant_translate/deepl_langs.py:101
+msgid "Dari"
+msgstr "Darice"
+
+#: instant_translate/deepl_langs.py:102 instant_translate/langs.py:90
+msgid "Pashto"
+msgstr "Peştuca"
+
+#: instant_translate/deepl_langs.py:103 instant_translate/langs.py:93
+#: instant_translate/yandex_langs.py:84
+msgid "Portuguese"
+msgstr "Portekizce"
+
+#: instant_translate/deepl_langs.py:104
+msgid "Quechua"
+msgstr "Quechua"
+
+#: instant_translate/deepl_langs.py:105 instant_translate/langs.py:95
+#: instant_translate/yandex_langs.py:85
+msgid "Romanian"
+msgstr "Romence"
+
+#: instant_translate/deepl_langs.py:106 instant_translate/langs.py:96
+#: instant_translate/yandex_langs.py:86
+msgid "Russian"
+msgstr "Rusça"
+
+#: instant_translate/deepl_langs.py:107
+msgid "Sanskrit"
+msgstr "Sanskrit"
+
+#: instant_translate/deepl_langs.py:108
+msgid "Sicilian"
+msgstr "Sicilian"
+
+#: instant_translate/deepl_langs.py:109 instant_translate/langs.py:104
+#: instant_translate/yandex_langs.py:88
+msgid "Slovak"
+msgstr "Slovakça"
+
+#: instant_translate/deepl_langs.py:110 instant_translate/langs.py:105
+#: instant_translate/yandex_langs.py:89
+msgid "Slovenian"
+msgstr "Slovence"
+
+#: instant_translate/deepl_langs.py:111 instant_translate/langs.py:20
+#: instant_translate/yandex_langs.py:90
+msgid "Albanian"
+msgstr "Arnavutça"
+
+#: instant_translate/deepl_langs.py:112 instant_translate/langs.py:99
+#: instant_translate/yandex_langs.py:91
+msgid "Serbian"
+msgstr "Sırpça"
+
+#: instant_translate/deepl_langs.py:113 instant_translate/langs.py:100
+msgid "Sesotho"
+msgstr "Sesotho"
+
+#: instant_translate/deepl_langs.py:114 instant_translate/langs.py:108
+#: instant_translate/yandex_langs.py:92
+msgid "Sundanese"
+msgstr "Sundaca"
+
+#: instant_translate/deepl_langs.py:115 instant_translate/langs.py:110
+#: instant_translate/yandex_langs.py:93
+msgid "Swedish"
+msgstr "İsveçce"
+
+#: instant_translate/deepl_langs.py:116 instant_translate/langs.py:109
+#: instant_translate/yandex_langs.py:94
+msgid "Swahili"
+msgstr "Svahili"
+
+#: instant_translate/deepl_langs.py:117 instant_translate/langs.py:112
+#: instant_translate/yandex_langs.py:95
+msgid "Tamil"
+msgstr "Tamilce"
+
+#: instant_translate/deepl_langs.py:118 instant_translate/langs.py:114
+#: instant_translate/yandex_langs.py:96
+msgid "Telugu"
+msgstr "Telugu"
+
+#: instant_translate/deepl_langs.py:119 instant_translate/langs.py:111
+#: instant_translate/yandex_langs.py:97
+msgid "Tajik"
+msgstr "Tacikçe"
+
+#: instant_translate/deepl_langs.py:120 instant_translate/langs.py:115
+#: instant_translate/yandex_langs.py:98
+msgid "Thai"
+msgstr "Tayca"
+
+#: instant_translate/deepl_langs.py:121 instant_translate/langs.py:117
+msgid "Turkmen"
+msgstr "Türkmence"
+
+#: instant_translate/deepl_langs.py:122 instant_translate/yandex_langs.py:99
+msgid "Tagalog"
+msgstr "Tagalogca"
+
+#: instant_translate/deepl_langs.py:123
+msgid "Tswana"
+msgstr "Setswana"
+
+#: instant_translate/deepl_langs.py:124 instant_translate/langs.py:116
+#: instant_translate/yandex_langs.py:100
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: instant_translate/deepl_langs.py:125
+msgid "Tsonga"
+msgstr "Tsonga"
+
+#: instant_translate/deepl_langs.py:126 instant_translate/langs.py:113
+#: instant_translate/yandex_langs.py:101
+msgid "Tatar"
+msgstr "Tatarca"
+
+#: instant_translate/deepl_langs.py:127 instant_translate/langs.py:118
+#: instant_translate/yandex_langs.py:103
+msgid "Ukrainian"
+msgstr "Ukraynaca"
+
+#: instant_translate/deepl_langs.py:128 instant_translate/langs.py:119
+#: instant_translate/yandex_langs.py:104
+msgid "Urdu"
+msgstr "Urduca"
+
+#: instant_translate/deepl_langs.py:129 instant_translate/langs.py:121
+#: instant_translate/yandex_langs.py:105
+msgid "Uzbek"
+msgstr "Özbekçe"
+
+#: instant_translate/deepl_langs.py:130 instant_translate/langs.py:122
+#: instant_translate/yandex_langs.py:106
+msgid "Vietnamese"
+msgstr "Vietnamca"
+
+#: instant_translate/deepl_langs.py:131
+msgid "Wolof"
+msgstr "Wolof"
+
+#: instant_translate/deepl_langs.py:132 instant_translate/langs.py:124
+#: instant_translate/yandex_langs.py:107
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: instant_translate/deepl_langs.py:133 instant_translate/langs.py:125
+#: instant_translate/yandex_langs.py:108
+msgid "Yiddish"
+msgstr "Yiddiş"
+
+#: instant_translate/deepl_langs.py:134
+msgid "Cantonese"
+msgstr "Kantonca"
+
+#: instant_translate/deepl_langs.py:135 instant_translate/yandex_langs.py:109
+msgid "Chinese"
+msgstr "Çince"
+
+#: instant_translate/deepl_langs.py:136 instant_translate/langs.py:127
+msgid "Zulu"
+msgstr "Zulu"
+
+#: instant_translate/deepl_langs.py:141
+msgid "German (Swiss)"
+msgstr "Almanca (İsviçre)"
+
+#: instant_translate/deepl_langs.py:142
+msgid "English (British)"
+msgstr "İngilizce (Britanya)"
+
+#: instant_translate/deepl_langs.py:143
+msgid "English (American)"
+msgstr "İngilizce (Amerikan)"
+
+#: instant_translate/deepl_langs.py:144
+msgid "Spanish (Latin American)"
+msgstr "İspanyolca (Latin Amerika)"
+
+#: instant_translate/deepl_langs.py:145
+msgid "French (Canadian)"
+msgstr "Fransızca (Kanada)"
+
+#: instant_translate/deepl_langs.py:146
+msgid "Portuguese (Brazilian)"
+msgstr "Portekizce (Brezilya)"
+
+#: instant_translate/deepl_langs.py:147
+msgid "Portuguese (European)"
+msgstr "Portekizce (Avrupa)"
+
+#: instant_translate/deepl_langs.py:148 instant_translate/langs.py:33
+msgid "Chinese (Simplified)"
+msgstr "Çince (Basitleştirilmiş)"
+
+#: instant_translate/deepl_langs.py:149 instant_translate/langs.py:34
+msgid "Chinese (Traditional)"
+msgstr "Çince (Geleneksel)"
+
+#: instant_translate/deepl_langs.py:165 instant_translate/extension.py:87
+#: instant_translate/langs.py:140 instant_translate/yandex_langs.py:119
+msgid "Auto-detect"
+msgstr "Otomatik algıla"
+
+#: instant_translate/engines.py:110
+msgid "Google Translate (unofficial)"
+msgstr "Google Translate (resmî olmayan)"
+
+#: instant_translate/engines.py:117
+msgid "Yandex Translate (unofficial)"
+msgstr "Yandex Translate (resmî olmayan)"
+
+#: instant_translate/engines.py:124
+msgid "DeepL API"
+msgstr "DeepL API"
+
+#: instant_translate/extension.py:74
+msgid "Translation engine"
+msgstr "Çeviri motoru"
+
+#: instant_translate/extension.py:80
+msgid ""
+"After changing the engine, apply the setting and reopen this dialog to see "
+"its language and provider options."
+msgstr ""
+"Motoru değiştirdikten sonra ayarı uygulayın ve dil ile sağlayıcı "
+"seçeneklerini görmek için bu iletişim kutusunu yeniden açın."
+
+#: instant_translate/extension.py:86
+msgid "Source language"
+msgstr "Kaynak dil"
+
+#: instant_translate/extension.py:92
+msgid "Target language"
+msgstr "Hedef dil"
+
+#: instant_translate/extension.py:98
+msgid "Language for auto-swap"
+msgstr "Otomatik değiştirme dili"
+
+#: instant_translate/extension.py:104
+msgid "Copy translation result to clipboard"
+msgstr "Çeviri sonucunu panoya kopyala"
+
+#: instant_translate/extension.py:109
+msgid "Replace underscores with spaces before translating"
+msgstr "Çevirmeden önce alt çizgileri boşluklarla değiştir"
+
+#: instant_translate/extension.py:119
+msgid ""
+"Google uses an unofficial public endpoint. The mirror is a separate third-"
+"party service intended mainly for users in China."
+msgstr ""
+"Google resmî olmayan herkese açık bir uç nokta kullanır. Yansı, özellikle "
+"Çin'deki kullanıcılar için tasarlanmış ayrı bir üçüncü taraf hizmetidir."
+
+#: instant_translate/extension.py:125
+msgid "Use the Google mirror endpoint"
+msgstr "Google yansı uç noktasını kullan"
+
+#: instant_translate/extension.py:134
+msgid ""
+"Yandex uses an unofficial mobile endpoint that can change or stop working "
+"without notice."
+msgstr ""
+"Yandex, haber vermeden değişebilecek veya çalışmayı durdurabilecek resmî "
+"olmayan bir mobil uç nokta kullanır."
+
+#: instant_translate/extension.py:144
+msgid "Maximum characters per Yandex or DeepL translation"
+msgstr "Yandex veya DeepL çevirisi başına en fazla karakter"
+
+#: instant_translate/extension.py:154
+msgid "Cache translations in memory for this Orca session"
+msgstr "Çevirileri bu Orca oturumu için bellekte önbelleğe al"
+
+#: instant_translate/extension.py:164
+msgid ""
+"Enter a DeepL key below. On the next DeepL request it is removed from Orca "
+"settings and stored in the desktop keyring. Orca cannot currently mask "
+"generated string fields, so protect the screen while entering it."
+msgstr ""
+"Aşağıya bir DeepL anahtarı girin. Anahtar, sonraki DeepL isteğinde Orca "
+"ayarlarından kaldırılıp masaüstü anahtarlığında saklanır. Orca şu anda "
+"oluşturulan metin alanlarını gizleyemediğinden anahtarı girerken ekranı "
+"koruyun."
+
+#: instant_translate/extension.py:172
+msgid "New or replacement DeepL API key"
+msgstr "Yeni veya yedek DeepL API anahtarı"
+
+#: instant_translate/extension.py:177
+msgid "DeepL plan"
+msgstr "DeepL planı"
+
+#: instant_translate/extension.py:178
+msgid "Free"
+msgstr "Ücretsiz"
+
+#: instant_translate/extension.py:178
+msgid "Pro"
+msgstr "Pro"
+
+#: instant_translate/extension.py:183
+msgid "Forget the stored DeepL key on the next DeepL request"
+msgstr "Sonraki DeepL isteğinde saklanan DeepL anahtarını unut"
+
+#: instant_translate/extension.py:203
+msgid "Translates the selected text"
+msgstr "Seçili metni çevirir"
+
+#: instant_translate/extension.py:211
+msgid "Translates the clipboard text"
+msgstr "Pano metnini çevirir"
+
+#: instant_translate/extension.py:219
+msgid "Swaps the source and target languages"
+msgstr "Kaynak ve hedef dilleri değiştirir"
+
+#: instant_translate/extension.py:227
+msgid "Announces the current source and target languages"
+msgstr "Geçerli kaynak ve hedef dilleri duyurur"
+
+#: instant_translate/extension.py:235
+msgid "Identifies the language of the selected text"
+msgstr "Seçili metnin dilini tanımlar"
+
+#: instant_translate/extension.py:270
+msgid "No text to identify."
+msgstr "Tanımlanacak metin yok."
+
+#: instant_translate/extension.py:270
+msgid "No text to translate."
+msgstr "Çevrilecek metin yok."
+
+#: instant_translate/extension.py:282
+msgid ""
+"This text has {count:,} characters; the configured {provider} limit is "
+"{maximum:,}."
+msgstr ""
+"Bu metin {count:,} karakter içeriyor; yapılandırılan {provider} sınırı "
+"{maximum:,}."
+
+#: instant_translate/extension.py:356
+msgid "The selected translation engine is not supported."
+msgstr "Seçilen çeviri motoru desteklenmiyor."
+
+#: instant_translate/extension.py:370
+msgid ""
+"The DeepL key was used for this request but could not be saved in the "
+"desktop keyring."
+msgstr ""
+"DeepL anahtarı bu istek için kullanıldı ancak masaüstü anahtarlığına "
+"kaydedilemedi."
+
+#: instant_translate/extension.py:379
+msgid "The desktop keyring could not be accessed for the DeepL API key."
+msgstr "DeepL API anahtarı için masaüstü anahtarlığına erişilemedi."
+
+#: instant_translate/extension.py:386
+msgid "The stored DeepL API key was removed."
+msgstr "Saklanan DeepL API anahtarı kaldırıldı."
+
+#: instant_translate/extension.py:391
+msgid "DeepL API key is not set."
+msgstr "DeepL API anahtarı ayarlanmamış."
+
+#: instant_translate/extension.py:436
+msgid "Language identification failed."
+msgstr "Dil tanımlama başarısız oldu."
+
+#: instant_translate/extension.py:438
+msgid "Translation failed."
+msgstr "Çeviri başarısız oldu."
+
+#: instant_translate/extension.py:445
+#, python-brace-format
+msgid "Detected language: {language}"
+msgstr "Algılanan dil: {language}"
+
+#: instant_translate/extension.py:477 instant_translate/extension.py:497
+msgid "No selection."
+msgstr "Seçim yok."
+
+#: instant_translate/extension.py:486
+msgid "There is no text on the clipboard."
+msgstr "Panoda metin yok."
+
+#: instant_translate/extension.py:508
+msgid "Languages swapped."
+msgstr "Diller değiştirildi."
+
+#: instant_translate/extension.py:519
+#, python-brace-format
+msgid "Translate: from {source} to {target}"
+msgstr "Çeviri: {source} dilinden {target} diline"
+
+#: instant_translate/langs.py:21 instant_translate/yandex_langs.py:17
+msgid "Amharic"
+msgstr "Etiyopyaca"
+
+#: instant_translate/langs.py:32
+msgid "Chichewa"
+msgstr "Çiçeva"
+
+#: instant_translate/langs.py:35
+msgid "Corsican"
+msgstr "Korsikaca"
+
+#: instant_translate/langs.py:43
+msgid "Filipino"
+msgstr "Filipince"
+
+#: instant_translate/langs.py:46
+msgid "Frisian"
+msgstr "Frizce"
+
+#: instant_translate/langs.py:54
+msgid "Hawaiian"
+msgstr "Havaice"
+
+#: instant_translate/langs.py:57
+msgid "Hmong"
+msgstr "Hmong"
+
+#: instant_translate/langs.py:66 instant_translate/yandex_langs.py:59
+msgid "Kannada"
+msgstr "Kannada"
+
+#: instant_translate/langs.py:68 instant_translate/yandex_langs.py:58
+msgid "Khmer"
+msgstr "Kmerce"
+
+#: instant_translate/langs.py:69
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: instant_translate/langs.py:71
+msgid "Kurdish"
+msgstr "Kürtçe"
+
+#: instant_translate/langs.py:73 instant_translate/yandex_langs.py:64
+msgid "Lao"
+msgstr "Laoca"
+
+#: instant_translate/langs.py:86
+msgid "Myanmar (Burmese)"
+msgstr "Myanmarca (Birmanca)"
+
+#: instant_translate/langs.py:88 instant_translate/yandex_langs.py:80
+msgid "Norwegian"
+msgstr "Norveççe"
+
+#: instant_translate/langs.py:89
+msgid "Odia"
+msgstr "Odia"
+
+#: instant_translate/langs.py:97
+msgid "Samoan"
+msgstr "Samoa Dili"
+
+#: instant_translate/langs.py:98
+msgid "Scots Gaelic"
+msgstr "İskoç Galcesi"
+
+#: instant_translate/langs.py:101
+msgid "Shona"
+msgstr "Shona"
+
+#: instant_translate/langs.py:102
+msgid "Sindhi"
+msgstr "Sindhi"
+
+#: instant_translate/langs.py:103
+msgid "Sinhala"
+msgstr "Sinhala"
+
+#: instant_translate/langs.py:106
+msgid "Somali"
+msgstr "Somali Dili"
+
+#: instant_translate/langs.py:120
+msgid "Uyghur"
+msgstr "Uygurca"
+
+#: instant_translate/langs.py:126
+msgid "Yoruba"
+msgstr "Yoruba"
+
+#: instant_translate/yandex_langs.py:28
+msgid "Chuvash"
+msgstr "Çuvaş (Türkçe)"
+
+#: instant_translate/yandex_langs.py:42
+msgid "Scottish Gaelic"
+msgstr "İskoç Galcesi"
+
+#: instant_translate/yandex_langs.py:48
+msgid "Haitian"
+msgstr "Haiti dili"
+
+#: instant_translate/yandex_langs.py:68
+msgid "Mari"
+msgstr "Mari dili (Ural-Altay)"
+
+#: instant_translate/yandex_langs.py:74
+msgid "Hill Mari"
+msgstr "Dağ Marice"
+
+#: instant_translate/yandex_langs.py:82
+msgid "Papiamento"
+msgstr "Papiamento"
+
+#: instant_translate/yandex_langs.py:87
+msgid "Sinhalese"
+msgstr "Seylanca"
+
+#: instant_translate/yandex_langs.py:102
+msgid "Udmurt"
+msgstr "Udmurt"
