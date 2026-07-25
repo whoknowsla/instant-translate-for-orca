@@ -16,13 +16,18 @@ classifiers = [
   "Programming Language :: Python :: 3 :: Only",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
   "bandit>=1.8.6",
   "mypy>=1.17",
   "pytest>=8.4",
   "ruff>=0.12",
 ]
+
+[tool.uv]
+# Orca and PyGObject are provided by the Linux distribution, so use the
+# matching system interpreter instead of downloading a separate Python.
+python-preference = "only-system"
 
 [tool.setuptools.packages.find]
 include = ["instant_translate*"]

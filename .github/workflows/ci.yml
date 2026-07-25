@@ -22,16 +22,19 @@ jobs:
           orca
           python3-devel
           python3-gobject
-          python3-pip
-      - name: Install project and development tools
-        run: python3 -m pip install --break-system-packages -e '.[dev]'
+      - name: Install uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          enable-cache: true
+      - name: Sync project and development tools
+        run: uv sync --locked
       - name: Compile
-        run: python3 -m compileall -q instant_translate tests
+        run: uv run --locked python -m compileall -q instant_translate tests
       - name: Test
-        run: python3 -m pytest -q
+        run: uv run --locked pytest -q
       - name: Lint
-        run: ruff check .
+        run: uv run --locked ruff check .
       - name: Type check
-        run: mypy instant_translate
+        run: uv run --locked mypy instant_translate
       - name: Security scan
-        run: bandit -c pyproject.toml -r instant_translate
+        run: uv run --locked bandit -c pyproject.toml -r instant_translate

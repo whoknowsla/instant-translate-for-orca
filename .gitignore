@@ -24,6 +24,7 @@ env/
 # AI assistant artifacts
 .claude/
 CLAUDE.local.md
+CLAUDE.md
 .copilot/
 .github/copilot-instructions.md.bak
 .gemini/

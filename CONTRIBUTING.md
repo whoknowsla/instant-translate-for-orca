@@ -25,24 +25,28 @@ can be discussed before much work is done.
 
 ## Development setup
 
-Python tools are declared in `pyproject.toml`. Orca, PyGObject, GTK, AT-SPI,
-dconf, and libsecret are system packages and must be installed through your
-Linux distribution.
+Python tools are declared in `pyproject.toml` and locked by UV. Orca, PyGObject,
+GTK, AT-SPI, dconf, and libsecret are system packages and must be installed
+through your Linux distribution.
 
-Install the Python development tools:
+Sync the development tools. UV manages the project environment automatically,
+so no virtual-environment creation or activation is needed:
 
 ```bash
-python3 -m pip install -e '.[dev]'
+uv sync --locked
 ```
+
+Add development tools with `uv add --dev <package>` and commit both
+`pyproject.toml` and `uv.lock`.
 
 Run the automated checks:
 
 ```bash
-python3 -m pytest
-python3 -m compileall -q instant_translate tests
-ruff check .
-mypy instant_translate
-bandit -c pyproject.toml -r instant_translate
+uv run --locked pytest
+uv run --locked python -m compileall -q instant_translate tests
+uv run --locked ruff check .
+uv run --locked mypy instant_translate
+uv run --locked bandit -c pyproject.toml -r instant_translate
 ```
 
 Add or update automated tests when practical. A passing test suite does not
